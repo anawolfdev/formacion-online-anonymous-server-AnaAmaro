@@ -34,7 +34,7 @@ body {
 
 .nav-trigger {
   background-image: url('../images/ico-menu.svg');
-  position: fixed;
+  position: absolute;
   background-color: #402929;
   opacity: 92%;
   border: none;
@@ -47,10 +47,17 @@ body {
   padding-top: 40px;
   background-repeat: no-repeat;
   border-radius: 3px;
+  cursor: pointer;
+}
+
+.nav-trigger:hover {
+  background-color: rgb(177, 17, 17);
 }
 
 /* MENU */
+
 .nav {
+  display: none;
   background-color: #402929;
   opacity: 92%;
   width: 100%;
@@ -64,28 +71,106 @@ body {
   align-items: center;
   list-style: none;
   height: 100%;
+  font-family: 'Roboto Slab', serif;
 }
 .nav__item {
   margin: 5px 0;
 }
 .nav__link {
   text-decoration: none;
+  color: #cdc9c9;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
 }
 .nav-close {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  border: none;
+  color: white;
+  background-color: black;
+  opacity: 92%;
+  background-image: url(../images/ico-close.svg);
+  width: 40px;
+  height: 1px;
+  padding-top: 40px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.nav-close:hover {
+  transform: rotate(30deg);
 }
 
 /* MAIN */
 .page__main {
+  width: 100vw;
 }
 .page__wrapper {
+  height: 100%;
+  margin: 0 30px;
 }
 .page__main-title {
+  padding-top: 50vh;
+  font-family: 'Roboto Slab', serif;
+  text-align: left;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: white;
+  max-width: 250px;
 }
 
 /* FOOTER */
+
 .page__footer {
-}
-.page__footer {
+  width: 100%;
+  margin: 30px 30px;
 }
 .page__footer-copy {
+  width: 100%;
+  background-color: grey;
+  opacity: 92%;
+  padding: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  text-align: center;
+  color: #c3c2c2;
+  border-radius: 3px;
+}
+
+@media (min-width: 768px) {
+  .page {
+    justify-content: flex-start;
+  }
+  .page__wrapper {
+    max-width: 990px;
+    margin: 0 60px;
+  }
+  .page__footer {
+    margin: 30px 60px;
+  }
+  .page__main-title {
+    font-size: 50px;
+    max-width: 500px;
+  }
+  .nav__link {
+    font-size: 40px;
+  }
+}
+@media (min-width: 1110px) {
+  .page__wrapper {
+    width: 990px;
+    margin: 0 auto;
+  }
+  .page__main-title {
+    font-size: 100px;
+    max-width: 990px;
+  }
+  .nav__link {
+    font-size: 50px;
+  }
 }
