@@ -6,13 +6,10 @@ const nav = document.querySelector('.nav');
 
 function open() {
  nav.classList.remove('js-hidden');
- openBtn.classList.add('js-hidden');
- closeBtn.classList.remove('js-hidden');
 }
 
 function close() {
  nav.classList.add('js-hidden');
- openBtn.classList.remove('js-hidden');
 }
 
 openBtn.addEventListener('click', open);
