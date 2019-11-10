@@ -1,19 +1,19 @@
 'use strict';
 
-const menuBtn = document.querySelector('.nav-trigger');
+const openBtn = document.querySelector('.nav-trigger');
 const closeBtn = document.querySelector('.nav-close');
 const nav = document.querySelector('.nav');
 
 function open() {
- nav.classList.remove('nav');
- menuBtn.classList.add('nav');
- closeBtn.classList.remove('nav');
+ nav.classList.remove('js-hidden');
+ openBtn.classList.add('js-hidden');
+ closeBtn.classList.remove('js-hidden');
 }
 
 function close() {
- nav.classList.add('nav');
- menuBtn.classList.remove('nav');
+ nav.classList.add('js-hidden');
+ openBtn.classList.remove('js-hidden');
 }
 
-menuBtn.addEventListener('click', open);
+openBtn.addEventListener('click', open);
 closeBtn.addEventListener('click', close);
