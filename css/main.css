@@ -112,6 +112,7 @@ body {
 /* MAIN */
 .page__main {
   width: 100vw;
+  flex-grow: 1;
 }
 .page__wrapper {
   height: 100%;
@@ -132,16 +133,16 @@ body {
 .page__footer {
   width: 100%;
   margin: 30px 30px;
+  padding-right: 10px;
 }
 .page__footer-copy {
   width: 100%;
-  background-color: grey;
-  opacity: 92%;
+  background-color: #81818166;
   padding: 5px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
   text-align: center;
-  color: #c3c2c2;
+  color: #b3b3b39e;
   border-radius: 3px;
 }
 
