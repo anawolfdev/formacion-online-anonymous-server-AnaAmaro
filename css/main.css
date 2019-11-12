@@ -78,23 +78,23 @@ body {
   height: 100%;
   font-family: 'Roboto Slab', serif;
 }
+
 .nav__item {
   margin: 5px 0;
 }
+
+.nav__item:hover {
+  background: black;
+  transform: translateX(50px);
+  transition: all 1s ease 0.2s;
+}
+
 .nav__link {
   text-decoration: none;
   color: #cdc9c9;
   font-size: 30px;
   font-weight: bold;
   text-align: center;
-}
-
-/* Animation */
-
-.nav__item:hover {
-  background: black;
-  transform: translateX(50px);
-  transition: all 1s ease 0.2s;
 }
 
 .nav-close {
@@ -156,6 +156,8 @@ body {
   border-radius: 3px;
 }
 
+/* Responsive */
+
 @media (min-width: 768px) {
   .page {
     justify-content: flex-start;
@@ -175,7 +177,8 @@ body {
     font-size: 40px;
   }
 }
-@media (min-width: 1110px) {
+
+@media (min-width: 1440px) {
   .page__wrapper {
     width: 990px;
     margin: 0 auto;
